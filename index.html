@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="Танит Груп">
+				</a>
+				<div class="header__menu menu__body">
+					<div class="menu__decor"></div>
+					<nav>
+						<ul>
+							<li><a href="error.html">О НАС</a></li>
+							<li><a href="applications.html">УСЛУГИ</a></li>
+							<li><a href="">НОВОСТИ</a></li>
+							<li><a href="">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a></li>
+							<li><a href="">КОНТАКТЫ</a></li>
+							<li data-spollers class="cabinet-header cabinet-header--adaptive">
+								<a href="">КАБИНЕТ</a>
+								<a href="" class="cabinet-header__login">login</a>
+								<button data-spoller type="button" class="cabinet-header__arrow _page-arrow"></button>
+								<a class="_exit" href="">ВЫЙТИ</a>
+							</li>
+							<li class="_exit-adaptive">
+								<a href="">ВЫЙТИ</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+				<div data-spollers class="header__language language">
+					<button data-spoller type="button" class="language__button">
+						<img src="img/ru.svg" alt="Русский">
+						<span>RU</span>
+						<span class="language__arrow _page-arrow"></span>
+					</button>
+					<ul class="language__list">
+						<li class="language__item"><a href=""><img src="img/ru.svg" alt="Русский">RU</a></li>
+						<li class="language__item"><a href=""><img src="img/ru.svg" alt="Русский">RU</a></li>
+					</ul>
+				</div>
+				<a href="tel:380487376464" class="header__phone">+38 (048) 7376464</a>
+				<a class="header__cabinet cabinet-header" href="">КАБИНЕТ</a>
+				<button type="button" class="icon-menu">МЕНЮ
+				</button>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page-cabinet cabinet">
+
+				<div class="cabinet__container">
+					<div class="cabinet__bg-blur"></div>
+					<div class="cabinet__bg"></div>
+					<div class="cabinet__title-wrapper">
+						<h1 class="cabinet__title _title">
+							Личный кабинет
+						</h1>
+					</div>
+
+					<div class="cabinet__form form-cabinet">
+						<form action="#" class="form-cabinet__form">
+							<label for="form-cabinet-email" class="form-cabinet__label _page-label">Логин</label>
+							<input id="form-cabinet-email" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required="email" placeholder="Ваш логин" class="form-cabinet__email _page-input">
+							<label for="form-cabinet-pass" class="form-cabinet__label _page-label">Пароль</label>
+							<input id="form-cabinet-pass" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваш пароль" class="form-cabinet__pass _page-input">
+							<div class="form-cabinet__line">
+								<label class="form-cabinet__chekbox-label">
+									<input type="checkbox" class="form-cabinet__checkbox">
+									<span class="form-cabinet__check"></span>
+									Запомнить меня
+								</label>
+								<a href="password-recovery.html" class="form-cabinet__forgotpass _pass-link">Забыли
+									пароль?</a>
+							</div>
+							<button type="submit" class="form-cabinet__button _page-btn">Войти</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+	</div>
+	</main>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+
+				<button data-close type="button" class="popup__close">
+					все заявки
+				</button>
+
+				<div class="popup__request request">
+
+					<div class="request__overall overall">
+						<div class="overall__item overall__number">
+							<p class="overall__option">
+								№ сделки:
+							</p>
+							<p class="overall__info">
+								00010274
+							</p>
+						</div>
+						<div class="overall__item deal-status-booking">
+							<p class="overall__option">
+								Статус сделки:
+							</p>
+							<p class="overall__info">
+								Букинг
+							</p>
+						</div>
+						<div class="overall__item account-status-unpaid">
+							<p class="overall__option">
+								Статус счета:
+							</p>
+							<p class="overall__info">
+								Не оплачен
+							</p>
+						</div>
+					</div>
+
+					<div class="request__info">
+						<div class="request__inner">
+							<div class="info-request">
+								<div class="info-request__item info-request__shipment">
+									<p class="info-request__option">порт отправления</p>
+									<p class="info-request__info">Лос-Анджелес,US</p>
+								</div>
+
+								<div class="info-request__item info-request__etd">
+									<p class="info-request__option">ETD</p>
+									<p class="info-request__info">21.01.2022</p>
+								</div>
+								<div class="info-request__item info-request__number">
+									<p class="info-request__option">номер коносамента</p>
+									<p class="info-request__info">ZIMUTRT912886</p>
+								</div>
+
+								<div class="info-request__item info-request__destination">
+									<p class="info-request__option">порт назначения
+									</p>
+									<p class="info-request__info">Одесса,UA</p>
+								</div>
+								<div class="info-request__item info-request__eta">
+									<p class="info-request__option">ETA</p>
+									<p class="info-request__info">10.03.2022</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="request__bg-wrapper">
+						<img class="popup__bg" src="img/popup-bg.svg" alt="">
+						<div class="request__about-cnt">
+
+							<div class="request__inner">
+								<div class="about-cnt">
+									<p class="about-cnt__title">
+										КОНТЕЙНЕРЫ
+									</p>
+									<div class="about-cnt__row">
+										<div class="about-cnt__code">
+											MEDU5110718
+										</div>
+										<div class="about-cnt__hc">
+											20НС
+										</div>
+										<div class="about-cnt__weight">
+											8761 kg
+										</div>
+									</div>
+									<div class="about-cnt__row">
+										<div class="about-cnt__code">
+											INKU6444093
+										</div>
+										<div class="about-cnt__hc">
+											40НС
+										</div>
+										<div class="about-cnt__weight">
+											7665 kg
+										</div>
+									</div>
+									<div class="about-cnt__row">
+										<div class="about-cnt__code">
+											MYTH5110718
+										</div>
+										<div class="about-cnt__hc">
+											40НС
+										</div>
+										<div class="about-cnt__weight">
+											7665 kg
+										</div>
+									</div>
+									<div class="about-cnt__row">
+										<div class="about-cnt__code">
+											TGFG6444093
+										</div>
+										<div class="about-cnt__hc">
+											40НС
+										</div>
+										<div class="about-cnt__weight">
+											7665 kg
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="request__accounts">
+							<div class="request__inner">
+								<div class="accounts-request">
+
+
+
+									<p class="accounts-request__title">
+										счета
+									</p>
+									<div class="accounts-request__row">
+										<div class="accounts-request__items">
+											<div class="accounts-request__number">
+												№12135451245
+											</div>
+											<div class="accounts-request__status status-pink">
+												Не оплачен
+											</div>
+											<div class="accounts-request__cost">
+												100 000,00 UAH
+											</div>
+										</div>
+										<a download href="" class="accounts-request__download-button"></a>
+									</div>
+									<div class="accounts-request__row">
+										<div class="accounts-request__items">
+											<div class="accounts-request__number">
+												№12135451245
+											</div>
+											<div class="accounts-request__status status-pink">
+												Не оплачен
+											</div>
+											<div class="accounts-request__cost">
+												80 000,00 UAH
+											</div>
+										</div>
+
+										<a download href="" class="accounts-request__download-button"></a>
+
+									</div>
+									<div class="accounts-request__row">
+										<div class="accounts-request__items">
+											<div class="accounts-request__number">
+												№12135451245
+											</div>
+											<div class="accounts-request__status status-pink">
+												Не оплачен
+											</div>
+											<div class="accounts-request__cost">
+												1 000,00 UAH
+											</div>
+										</div>
+
+										<a download href="" class="accounts-request__download-button"></a>
+
+									</div>
+									<div class="accounts-request__row">
+
+										<div class="accounts-request__items">
+											<div class="accounts-request__number">
+												№12135451245
+											</div>
+											<div class="accounts-request__status status-pink">
+												Не оплачен
+											</div>
+											<div class="accounts-request__cost">
+												50 000,00 UAH
+											</div>
+										</div>
+
+										<a download href="" class="accounts-request__download-button"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

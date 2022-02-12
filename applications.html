@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="Танит Груп">
+				</a>
+				<div class="header__menu menu__body">
+					<div class="menu__decor"></div>
+					<nav>
+						<ul>
+							<li><a href="error.html">О НАС</a></li>
+							<li><a href="applications.html">УСЛУГИ</a></li>
+							<li><a href="">НОВОСТИ</a></li>
+							<li><a href="">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a></li>
+							<li><a href="">КОНТАКТЫ</a></li>
+							<li data-spollers class="cabinet-header cabinet-header--adaptive">
+								<a href="">КАБИНЕТ</a>
+								<a href="" class="cabinet-header__login">login</a>
+								<button data-spoller type="button" class="cabinet-header__arrow _page-arrow"></button>
+								<a class="_exit" href="">ВЫЙТИ</a>
+							</li>
+							<li class="_exit-adaptive">
+								<a href="">ВЫЙТИ</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+				<div data-spollers class="header__language language">
+					<button data-spoller type="button" class="language__button">
+						<img src="img/ru.svg" alt="Русский">
+						<span>RU</span>
+						<span class="language__arrow _page-arrow"></span>
+					</button>
+					<ul class="language__list">
+						<li class="language__item"><a href=""><img src="img/ru.svg" alt="Русский">RU</a></li>
+						<li class="language__item"><a href=""><img src="img/ru.svg" alt="Русский">RU</a></li>
+					</ul>
+				</div>
+				<a href="tel:380487376464" class="header__phone">+38 (048) 7376464</a>
+				<a class="header__cabinet cabinet-header" href="">КАБИНЕТ</a>
+				<button type="button" class="icon-menu">МЕНЮ
+				</button>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page-applications applications">
+				<div class="applications__container">
+					<div class="applications__title-wrapper">
+						<h1 class="applications__title _title">
+							Личный кабинет
+						</h1>
+					</div>
+
+					<div class="applications__wrapper">
+						<div class="applications__row">
+							<div class="applications__client">
+								<p class="applications__name">
+									Наименование клиента
+								</p>
+								<p class="applications__balance">
+									Баланс: <span>400 000 грн</span>
+								</p>
+							</div>
+							<button type="button" class="applications__filters-button">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<div class="applications__settings">
+								<button type="button" class="applications__button applications__button--active">ВСЕ</button>
+								<button type="button" class="applications__button">АРХИВ</button>
+								<button type="button" class="applications__button">ТЕКУЩИЕ</button>
+							</div>
+							<div class="applications__search search-applications">
+								<form action="#" class="search-applications">
+
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск" class="search-applications__input">
+									<button type="submit" class="search-applications__button">
+
+									</button>
+								</form>
+							</div>
+						</div>
+						<table class="applications__table table-applications" border="0" cellspacing="0" cellpadding="0">
+							<thead class="table-applications__head">
+								<tr class="table-applications__head-row">
+									<th class="table-applications__head-cell">
+										<div class="table-applications__cell-wrapper">
+											№ сделки
+											<div class="table-applications__buttons">
+												<button type="button" class="table-applications__button-up"></button>
+												<button type="button" class="table-applications__button-down"></button>
+											</div>
+										</div>
+									</th>
+									<th class="table-applications__head-cell">
+										<div class="table-applications__cell-wrapper">
+											порт отправления
+											<div class="table-applications__buttons">
+												<button type="button" class="table-applications__button-up"></button>
+												<button type="button" class="table-applications__button-down"></button>
+											</div>
+										</div>
+									</th>
+									<th class="table-applications__head-cell">
+										<div class="table-applications__cell-wrapper">
+											порт назначения
+											<div class="table-applications__buttons">
+												<button type="button" class="table-applications__button-up"></button>
+												<button type="button" class="table-applications__button-down"></button>
+											</div>
+										</div>
+									</th>
+									<th class="table-applications__head-cell">
+										<div class="table-applications__cell-wrapper">
+											ETD
+											<div class="table-applications__buttons">
+												<button type="button" class="table-applications__button-up"></button>
+												<button type="button" class="table-applications__button-down"></button>
+											</div>
+										</div>
+									</th>
+									<th class="table-applications__head-cell">
+										<div class="table-applications__cell-wrapper">
+											ETA
+											<div class="table-applications__buttons">
+												<button type="button" class="table-applications__button-up"></button>
+												<button type="button" class="table-applications__button-down"></button>
+											</div>
+										</div>
+									</th>
+									<th class="table-applications__head-cell">
+										<div class="table-applications__cell-wrapper">
+											№ коносамента
+											<div class="table-applications__buttons">
+												<button type="button" class="table-applications__button-up"></button>
+												<button type="button" class="table-applications__button-down"></button>
+											</div>
+										</div>
+
+
+									</th>
+									<th class="table-applications__head-cell">
+										<div class="table-applications__cell-wrapper">
+											контейнеры
+											<div class="table-applications__buttons">
+												<button type="button" class="table-applications__button-up"></button>
+												<button type="button" class="table-applications__button-down"></button>
+											</div>
+										</div>
+									</th>
+									<th class="table-applications__head-cell">
+										<div class="table-applications__cell-wrapper">
+											Статус сделки
+											<div class="table-applications__buttons">
+												<button type="button" class="table-applications__button-up"></button>
+												<button type="button" class="table-applications__button-down"></button>
+											</div>
+										</div>
+									</th>
+									<th class="table-applications__head-cell">
+										<div class="table-applications__cell-wrapper">
+											Статус счета
+											<div class="table-applications__buttons">
+												<button type="button" class="table-applications__button-up"></button>
+												<button type="button" class="table-applications__button-down"></button>
+											</div>
+										</div>
+									</th>
+								</tr>
+							</thead>
+							<tbody class="table-applications__body">
+								<tr class="table-applications__row table-applications__row-1">
+								<tr class="table-applications__row-box table-applications__row-box-1">
+									<th class="table-applications__row-right table-applications__row-right-1">
+										<div class="table-applications__payment-pink"></div>
+										<div class="table-applications__arrow"></div>
+									</th>
+								</tr>
+								<th data-da=".table-applications__row-box-1,991.98,0" class="table-applications__cell table-applications__number">
+									<button type="button" data-popup="#popup" class="table-applications__button">00010274</button>
+								</th>
+								<th class="table-applications__cell table-applications__shipment">Лос-Анджелес,US</th>
+								<th class="table-applications__cell table-applications__destination">Одесса,UA</th>
+								<th data-da=".table-applications__shipment,575.98,0" class="table-applications__cell table-applications__etd">21.01.2022</th>
+								<th data-da=".table-applications__destination,575.98,0" class="table-applications__cell table-applications__eta">10.03.2022</th>
+								<th class="table-applications__cell table-applications__consignment">ZIMUTRT912886</th>
+								<th class="table-applications__cell table-applications__cnt">12*20, 10*40</th>
+								<th data-da=".table-applications__row-right-1,991.98,0" class="table-applications__cell status-blue">Букинг</th>
+								<th class="table-applications__cell status-pink table-applications__payment">Не оплачен</th>
+								</tr>
+								<tr class="table-applications__row table-applications__row-2">
+								<tr class="table-applications__row-box table-applications__row-box-2">
+									<div class="table-applications__row-right-2">
+										<div class="table-applications__payment-yellow"></div>
+										<div class="table-applications__arrow"></div>
+									</div>
+								</tr>
+								<th data-da=".table-applications__row-box-2,991.98,0" class="table-applications__cell table-applications__number">
+									<button type="button" data-popup="#popup-2" class="table-applications__button">00010274</button>
+								</th>
+								<th class="table-applications__cell table-applications__shipment">Лос-Анджелес,US</th>
+								<th class="table-applications__cell table-applications__destination">Одесса,UA</th>
+								<th data-da=".table-applications__shipment,575.98,0" class="table-applications__cell table-applications__etd">20.01.2022</th>
+								<th data-da=".table-applications__destination,575.98,0" class="table-applications__cell table-applications__eta">21.02.2022</th>
+								<th class="table-applications__cell table-applications__consignment">ZIMUTRT912886</th>
+								<th class="table-applications__cell table-applications__cnt">12*20, 10*40</th>
+								<th data-da=".table-applications__row-right-2,991.98,0" class="table-applications__cell status-yellow">Выполняется</th>
+								<th class="table-applications__cell status-yellow table-applications__payment">Частично</th>
+								</tr>
+								<tr class="table-applications__row table-applications__row-1">
+								<tr class="table-applications__row-box table-applications__row-box-3">
+									<div class="table-applications__row-right-3">
+										<div class="table-applications__payment-yellow"></div>
+										<div class="table-applications__arrow"></div>
+									</div>
+								</tr>
+								<th data-da=".table-applications__row-box-3,991.98,0" class="table-applications__cell table-applications__number">
+									<button type="button" data-popup="#popup" class="table-applications__button">00010274</button>
+								</th>
+								<th class="table-applications__cell table-applications__shipment">Одесса,UA</th>
+								<th class="table-applications__cell table-applications__destination">Лос-Анджелес,US</th>
+								<th data-da=".table-applications__shipment,575.98,0" class="table-applications__cell table-applications__etd">20.01.2022</th>
+								<th data-da=".table-applications__destination,575.98,0" class="table-applications__cell table-applications__eta">21.02.2022</th>
+								<th class="table-applications__cell table-applications__consignment">ZIMUTRT912886</th>
+								<th class="table-applications__cell table-applications__cnt">12*20, 10*40</th>
+								<th data-da=".table-applications__row-right-3,991.98,0" class="table-applications__cell status-pink">Отмена</th>
+								<th class="table-applications__cell status-yellow table-applications__payment">Частично</th>
+								</tr>
+								<tr class="table-applications__row table-applications__row-2">
+								<tr class="table-applications__row-box table-applications__row-box-4">
+									<div class="table-applications__row-right table-applications__row-right-4">
+										<div class="table-applications__payment-green"></div>
+										<div class="table-applications__arrow"></div>
+									</div>
+								</tr>
+								<th data-da=".table-applications__row-box-4,991.98,0" class="table-applications__cell table-applications__number">
+									<button type="button" data-popup="#popup" class="table-applications__button">00010274</button>
+								</th>
+								<th class="table-applications__cell table-applications__shipment">Лос-Анджелес,US</th>
+								<th class="table-applications__cell table-applications__destination">Одесса,UA</th>
+								<th data-da=".table-applications__shipment,575.98,0" class="table-applications__cell table-applications__etd">20.01.2022</th>
+								<th data-da=".table-applications__destination,575.98,0" class="table-applications__cell table-applications__eta">21.02.2022</th>
+								<th class="table-applications__cell table-applications__consignment">ZIMUTRT912886</th>
+								<th class="table-applications__cell table-applications__cnt">12*20, 10*40</th>
+								<th data-da=".table-applications__row-right-4,991.98,0" class="table-applications__cell status-green">Завершена</th>
+								<th class="table-applications__cell status-green table-applications__payment">Оплачен</th>
+								</tr>
+								<tr class="table-applications__row table-applications__row-1">
+								<tr class="table-applications__row-box table-applications__row-box-5">
+									<div class="table-applications__row-right table-applications__row-right-5">
+										<div class="table-applications__payment-green"></div>
+										<div class="table-applications__arrow"></div>
+									</div>
+								</tr>
+								<th data-da=".table-applications__row-box-5,991.98,0" class="table-applications__cell table-applications__number">
+									<button type="button" data-popup="#popup" class="table-applications__button">00010274</button>
+								</th>
+								<th class="table-applications__cell table-applications__shipment">Лос-Анджелес,US</th>
+								<th class="table-applications__cell table-applications__destination">Одесса,UA</th>
+								<th data-da=".table-applications__shipment,575.98,0" class="table-applications__cell table-applications__etd">20.01.2022</th>
+								<th data-da=".table-applications__destination,575.98,0" class="table-applications__cell table-applications__eta">21.02.2022</th>
+								<th class="table-applications__cell table-applications__consignment">ZIMUTRT912886</th>
+								<th class="table-applications__cell table-applications__cnt">12*20, 10*40</th>
+								<th data-da=".table-applications__row-right-5,991.98,0" class="table-applications__cell status-green">Завершена</th>
+								<th class="table-applications__cell status-green table-applications__payment">Оплачен</th>
+								</tr>
+								<tr class="table-applications__row table-applications__row-2">
+								<tr class="table-applications__row-box table-applications__row-box-6">
+									<div class="table-applications__row-right table-applications__row-right-6">
+										<div class="table-applications__payment-green"></div>
+										<div class="table-applications__arrow"></div>
+									</div>
+								</tr>
+								<th data-da=".table-applications__row-box-6,991.98,0" class="table-applications__cell table-applications__number">
+									<button type="button" data-popup="#popup" class="table-applications__button">00010274</button>
+								</th>
+								<th class="table-applications__cell table-applications__shipment">Лос-Анджелес,US</th>
+								<th class="table-applications__cell table-applications__destination">Одесса,UA</th>
+								<th data-da=".table-applications__shipment,575.98,0" class="table-applications__cell table-applications__etd">20.01.2022</th>
+								<th data-da=".table-applications__destination,575.98,0" class="table-applications__cell table-applications__eta">21.02.2022</th>
+								<th class="table-applications__cell table-applications__consignment">ZIMUTRT912886</th>
+								<th class="table-applications__cell table-applications__cnt">12*20, 10*40</th>
+								<th data-da=".table-applications__row-right-6,991.98,0" class="table-applications__cell status-green">Завершена</th>
+								<th class="table-applications__cell status-green table-applications__payment">Оплачен</th>
+								</tr>
+							</tbody>
+						</table>
+
+
+
+
+
+
+						<!-- <div class="applications__table table-applications">
+                            <div class="table-applications__head">
+                                <div class="table-applications__head-row">
+                                    <div class="table-applications__head-cell">
+                                        <div class="table-applications__cell-wrapper">
+                                            № сделки
+                                            <div class="table-applications__buttons">
+                                                <button type="button" class="table-applications__button-up"></button>
+                                                <button type="button" class="table-applications__button-down"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-applications__head-cell">
+                                        <div class="table-applications__cell-wrapper">
+                                            № сделки
+                                            <div class="table-applications__buttons">
+                                                <button type="button" class="table-applications__button-up"></button>
+                                                <button type="button" class="table-applications__button-down"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-applications__head-cell">
+                                        <div class="table-applications__cell-wrapper">
+                                            № сделки
+                                            <div class="table-applications__buttons">
+                                                <button type="button" class="table-applications__button-up"></button>
+                                                <button type="button" class="table-applications__button-down"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-applications__head-cell">
+                                        <div class="table-applications__cell-wrapper">
+                                            № сделки
+                                            <div class="table-applications__buttons">
+                                                <button type="button" class="table-applications__button-up"></button>
+                                                <button type="button" class="table-applications__button-down"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-applications__head-cell">
+                                        <div class="table-applications__cell-wrapper">
+                                            № сделки
+                                            <div class="table-applications__buttons">
+                                                <button type="button" class="table-applications__button-up"></button>
+                                                <button type="button" class="table-applications__button-down"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-applications__head-cell">
+                                        <div class="table-applications__cell-wrapper">
+                                            № сделки
+                                            <div class="table-applications__buttons">
+                                                <button type="button" class="table-applications__button-up"></button>
+                                                <button type="button" class="table-applications__button-down"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-applications__head-cell">
+                                        <div class="table-applications__cell-wrapper">
+                                            № сделки
+                                            <div class="table-applications__buttons">
+                                                <button type="button" class="table-applications__button-up"></button>
+                                                <button type="button" class="table-applications__button-down"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-applications__head-cell">
+                                        <div class="table-applications__cell-wrapper">
+                                            № сделки
+                                            <div class="table-applications__buttons">
+                                                <button type="button" class="table-applications__button-up"></button>
+                                                <button type="button" class="table-applications__button-down"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-applications__body">
+                                <div class="table-applications__row table-applications__row-1">
+                                    <div class="table-applications__row-box">
+                                        <div class="table-applications__row-right">
+                                            <div class="table-applications__payment-pink"></div>
+                                            <button type="submit" class="table-applications__button"></button>
+                                        </div>
+                                    </div>
+                                    <div data-da=".table-applications__row-box,991.98,0" class="table-applications__cell">00010274</div>
+                                    <div class="table-applications__cell">Лос-Анджелес,US</div>
+                                    <div class="table-applications__cell">Одесса,UA</div>
+                                    <div class="table-applications__cell">21.01.2022</div>
+                                    <div class="table-applications__cell">10.03.2022</div>
+                                    <div class="table-applications__cell table-applications__consignment">ZIMUTRT912886</div>
+                                    <div class="table-applications__cell table-applications__cnt">12*20, 10*40</div>
+                                    <div data-da=".table-applications__row-right,991.98,0" class="table-applications__cell status-blue">Букинг</div>
+                                    <div class="table-applications__cell status-pink table-applications__payment">Не оплачен</div>
+                                </div>
+                            </div>
+                        </div> -->
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+
+				<button data-close type="button" class="popup__close">
+					все заявки
+				</button>
+
+				<div class="popup__request request">
+
+					<div class="request__overall overall">
+						<div class="overall__item overall__number">
+							<p class="overall__option">
+								№ сделки:
+							</p>
+							<p class="overall__info">
+								00010274
+							</p>
+						</div>
+						<div class="overall__item deal-status-booking">
+							<p class="overall__option">
+								Статус сделки:
+							</p>
+							<p class="overall__info">
+								Букинг
+							</p>
+						</div>
+						<div class="overall__item account-status-unpaid">
+							<p class="overall__option">
+								Статус счета:
+							</p>
+							<p class="overall__info">
+								Не оплачен
+							</p>
+						</div>
+					</div>
+
+					<div class="request__info">
+						<div class="request__inner">
+							<div class="info-request">
+								<div class="info-request__item info-request__shipment">
+									<p class="info-request__option">порт отправления</p>
+									<p class="info-request__info">Лос-Анджелес,US</p>
+								</div>
+
+								<div class="info-request__item info-request__etd">
+									<p class="info-request__option">ETD</p>
+									<p class="info-request__info">21.01.2022</p>
+								</div>
+								<div class="info-request__item info-request__number">
+									<p class="info-request__option">номер коносамента</p>
+									<p class="info-request__info">ZIMUTRT912886</p>
+								</div>
+
+								<div class="info-request__item info-request__destination">
+									<p class="info-request__option">порт назначения
+									</p>
+									<p class="info-request__info">Одесса,UA</p>
+								</div>
+								<div class="info-request__item info-request__eta">
+									<p class="info-request__option">ETA</p>
+									<p class="info-request__info">10.03.2022</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="request__bg-wrapper">
+						<img class="popup__bg" src="img/popup-bg.svg" alt="">
+						<div class="request__about-cnt">
+
+							<div class="request__inner">
+								<div class="about-cnt">
+									<p class="about-cnt__title">
+										КОНТЕЙНЕРЫ
+									</p>
+									<div class="about-cnt__row">
+										<div class="about-cnt__code">
+											MEDU5110718
+										</div>
+										<div class="about-cnt__hc">
+											20НС
+										</div>
+										<div class="about-cnt__weight">
+											8761 kg
+										</div>
+									</div>
+									<div class="about-cnt__row">
+										<div class="about-cnt__code">
+											INKU6444093
+										</div>
+										<div class="about-cnt__hc">
+											40НС
+										</div>
+										<div class="about-cnt__weight">
+											7665 kg
+										</div>
+									</div>
+									<div class="about-cnt__row">
+										<div class="about-cnt__code">
+											MYTH5110718
+										</div>
+										<div class="about-cnt__hc">
+											40НС
+										</div>
+										<div class="about-cnt__weight">
+											7665 kg
+										</div>
+									</div>
+									<div class="about-cnt__row">
+										<div class="about-cnt__code">
+											TGFG6444093
+										</div>
+										<div class="about-cnt__hc">
+											40НС
+										</div>
+										<div class="about-cnt__weight">
+											7665 kg
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="request__accounts">
+							<div class="request__inner">
+								<div class="accounts-request">
+
+
+
+									<p class="accounts-request__title">
+										счета
+									</p>
+									<div class="accounts-request__row">
+										<div class="accounts-request__items">
+											<div class="accounts-request__number">
+												№12135451245
+											</div>
+											<div class="accounts-request__status status-pink">
+												Не оплачен
+											</div>
+											<div class="accounts-request__cost">
+												100 000,00 UAH
+											</div>
+										</div>
+										<a download href="" class="accounts-request__download-button"></a>
+									</div>
+									<div class="accounts-request__row">
+										<div class="accounts-request__items">
+											<div class="accounts-request__number">
+												№12135451245
+											</div>
+											<div class="accounts-request__status status-pink">
+												Не оплачен
+											</div>
+											<div class="accounts-request__cost">
+												80 000,00 UAH
+											</div>
+										</div>
+
+										<a download href="" class="accounts-request__download-button"></a>
+
+									</div>
+									<div class="accounts-request__row">
+										<div class="accounts-request__items">
+											<div class="accounts-request__number">
+												№12135451245
+											</div>
+											<div class="accounts-request__status status-pink">
+												Не оплачен
+											</div>
+											<div class="accounts-request__cost">
+												1 000,00 UAH
+											</div>
+										</div>
+
+										<a download href="" class="accounts-request__download-button"></a>
+
+									</div>
+									<div class="accounts-request__row">
+
+										<div class="accounts-request__items">
+											<div class="accounts-request__number">
+												№12135451245
+											</div>
+											<div class="accounts-request__status status-pink">
+												Не оплачен
+											</div>
+											<div class="accounts-request__cost">
+												50 000,00 UAH
+											</div>
+										</div>
+
+										<a download href="" class="accounts-request__download-button"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<div id="popup-2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+
+				<button data-close type="button" class="popup__close">
+					все заявки
+				</button>
+
+				<div class="popup__request request">
+
+					<div class="request__overall overall">
+						<div class="overall__item overall__number">
+							<p class="overall__option">
+								№ сделки:
+							</p>
+							<p class="overall__info">
+								00010274
+							</p>
+						</div>
+						<div class="overall__item deal-status-booking">
+							<p class="overall__option">
+								Статус сделки:
+							</p>
+							<p class="overall__info">
+								Букинг
+							</p>
+						</div>
+						<div class="overall__item account-status-unpaid">
+							<p class="overall__option">
+								Статус счета:
+							</p>
+							<p class="overall__info">
+								Не оплачен
+							</p>
+						</div>
+					</div>
+
+					<div class="request__info">
+						<div class="request__inner">
+							<div class="info-request">
+								<div class="info-request__item info-request__shipment">
+									<p class="info-request__option">порт отправления</p>
+									<p class="info-request__info">Лос-Анджелес,US</p>
+								</div>
+
+								<div class="info-request__item info-request__etd">
+									<p class="info-request__option">ETD</p>
+									<p class="info-request__info">21.01.2022</p>
+								</div>
+								<div class="info-request__item info-request__number">
+									<p class="info-request__option">номер коносамента</p>
+									<p class="info-request__info">ZIMUTRT912886</p>
+								</div>
+
+								<div class="info-request__item info-request__destination">
+									<p class="info-request__option">порт назначения
+									</p>
+									<p class="info-request__info">Одесса,UA</p>
+								</div>
+								<div class="info-request__item info-request__eta">
+									<p class="info-request__option">ETA</p>
+									<p class="info-request__info">10.03.2022</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="request__bg-wrapper">
+						<img class="popup__bg" src="img/popup-bg.svg" alt="">
+						<div class="request__about-cnt">
+
+							<div class="request__inner">
+								<div class="about-cnt">
+									<p class="about-cnt__title">
+										КОНТЕЙНЕРЫ
+									</p>
+									<div class="about-cnt__row">
+										<div class="about-cnt__code">
+											MEDU5110718
+										</div>
+										<div class="about-cnt__hc">
+											20НС
+										</div>
+										<div class="about-cnt__weight">
+											8761 kg
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="request__accounts">
+							<div class="request__inner">
+								<div class="accounts-request">
+
+
+
+									<p class="accounts-request__title">
+										счета
+									</p>
+									<div class="accounts-request__row">
+										<div class="accounts-request__items">
+											<div class="accounts-request__number">
+												№12135451245
+											</div>
+											<div class="accounts-request__status status-pink">
+												Не оплачен
+											</div>
+											<div class="accounts-request__cost">
+												100 000,00 UAH
+											</div>
+										</div>
+										<a download href="" class="accounts-request__download-button"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
