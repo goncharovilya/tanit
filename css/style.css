@@ -232,6 +232,7 @@ h6 {
   font-weight: 700;
   padding-left: 2.0625rem;
   margin-left: 2rem;
+  outline: none;
 }
 @media (min-width: 77.8125em) {
   .popup__close {
@@ -301,6 +302,7 @@ h6 {
 }
 .request__about-cnt {
   position: relative;
+  overflow-x: clip;
 }
 .request__about-cnt::before {
   content: "";
@@ -809,15 +811,15 @@ h6 {
 }
 @media (max-width: 62em) {
   .header__phone {
-    order: 1;
-    margin: 0;
+    order: 1 !important;
+    margin: 0 !important;
   }
 }
 @media (max-width: 36em) {
   .header__phone {
-    order: 4;
+    order: 4 !important;
     width: 100%;
-    margin: 0.75rem 0px 0px 0px;
+    margin: 0.75rem 0px 0px 0px !important;
     text-align: center;
   }
 }
@@ -884,7 +886,7 @@ h6 {
   top: 0.9375rem;
   font-weight: 400;
   text-transform: lowercase;
-  font-family: "Open Sans";
+  font-family: "Open Sans" !important;
   font-size: 0.875rem;
   left: 1.875rem;
   color: #00A6BE;
@@ -936,7 +938,6 @@ h6 {
     z-index: 4;
     left: 0;
     top: -100%;
-    transition: all 0.3s ease 0.3s;
   }
   .menu-open .menu__body {
     top: 0;
@@ -945,30 +946,13 @@ h6 {
   }
   .menu__body .menu__decor {
     position: absolute;
-    bottom: -7.5rem;
+    bottom: 0.875rem;
     right: 0;
     width: 100%;
     height: 4.375rem;
     z-index: 6;
     background: url("img/css_sprites.png") -0.625rem -0.625rem;
   }
-  .menu__body::before {
-    content: "";
-    position: absolute;
-    width: 12.1875rem;
-    height: 15.8125rem;
-    right: 1.25rem;
-    bottom: -3.75rem;
-    z-index: 5;
-    background: url("img/css_sprites.png") -0.625rem -27rem;
-  }
-}
-@media (max-width: 62em) and (min-width: 36em) {
-  .menu__body::before {
-    display: none;
-  }
-}
-@media (max-width: 62em) {
   .menu__body nav ul li._exit-adaptive {
     margin: 0 !important;
   }
@@ -976,15 +960,18 @@ h6 {
 @media (max-width: 36em) {
   .menu__body {
     position: fixed;
+    height: 100%;
     top: 11.5625rem;
     overflow-x: hidden;
     overflow-y: auto;
-    height: 100%;
     left: -100%;
     padding: 5rem 0px 7.3125rem 2.3125rem !important;
     margin: 6.5625rem 0px 0px 0px;
     display: flex;
     flex-direction: column;
+  }
+  .menu__body nav {
+    padding: 0px 0px 7.3125rem 0px;
   }
   .menu-open .menu__body {
     left: 0;
@@ -995,9 +982,25 @@ h6 {
     width: 35.25rem;
     height: 35.25rem;
     left: 9.4375rem;
-    top: 22rem;
+    bottom: -7.3125rem;
     background: rgba(0, 166, 190, 0.1);
     filter: blur(200px);
+    z-index: -3;
+  }
+  .menu__body::before {
+    content: "";
+    position: absolute;
+    width: 12.1875rem;
+    height: 15.8125rem;
+    right: 1.25rem;
+    bottom: -3.3125rem;
+    z-index: 5;
+    background: url("img/css_sprites.png") -0.625rem -27rem;
+    z-index: -2;
+  }
+  .menu__body .menu__decor {
+    bottom: -6.1875rem;
+    z-index: -1;
   }
 }
 .menu__body ul {
@@ -1174,25 +1177,40 @@ h6 {
 }
 
 .cabinet {
-  padding: 3.3125rem 0px 0px 0px;
+  padding: 3.3125rem 0px 12.625rem 0px;
   position: relative;
+}
+@media (max-width: 62em) {
+  .cabinet {
+    padding: 3.3125rem 0px 35.6875rem 0px;
+  }
+}
+@media (max-width: 36em) {
+  .cabinet {
+    padding: 3.3125rem 0px 21.5625rem 0px;
+  }
+}
+@media (max-width: 23.375em) {
+  .cabinet {
+    padding: 3.3125rem 0px 6.5625rem 0px;
+  }
 }
 .cabinet::after {
   content: "";
   position: absolute;
-  bottom: -12.5rem;
+  bottom: 0rem;
   width: 120rem;
   height: 4.375rem;
   background: url("img/css_sprites.png") -0.625rem -0.625rem;
 }
 @media (max-width: 62em) {
   .cabinet::after {
-    bottom: -33.125rem;
+    bottom: 3.75rem;
   }
 }
 @media (max-width: 36em) {
   .cabinet::after {
-    bottom: -23.125rem;
+    bottom: 0rem;
   }
 }
 @media (max-width: 23.375em) {
@@ -1734,6 +1752,7 @@ h6 {
 }
 .applications__row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0px 0px 0.75rem 0px;
@@ -1772,6 +1791,16 @@ h6 {
 }
 .applications__filters-button span:nth-child(3) {
   width: 1.1875rem;
+}
+@media (max-width: 48em) {
+  .applications__filters-button {
+    order: 3;
+  }
+}
+@media (max-width: 48em) {
+  .applications__settings {
+    order: 4;
+  }
 }
 .applications__button {
   font-family: "HeliosCond";
