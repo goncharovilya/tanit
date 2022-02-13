@@ -1,19 +1,6 @@
 (() => {
     "use strict";
     const modules_flsModules = {};
-    function isWebp() {
-        function testWebP(callback) {
-            let webP = new Image;
-            webP.onload = webP.onerror = function() {
-                callback(2 == webP.height);
-            };
-            webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-        }
-        testWebP((function(support) {
-            let className = true === support ? "webp" : "no-webp";
-            document.documentElement.classList.add(className);
-        }));
-    }
     let _slideUp = (target, duration = 500, showmore = 0) => {
         if (!target.classList.contains("_slide")) {
             target.classList.add("_slide");
@@ -680,8 +667,27 @@
     };
     const da = new DynamicAdapt("max");
     da.init();
+    $("body").on("click", ".table-applications__head-cell", (function() {
+        if ($(this).hasClass("filter-active-1")) if ($(this).hasClass("filter-active-2")) {
+            $(this).removeClass("filter-active-1");
+            $(this).removeClass("filter-active-2");
+        } else $(this).addClass("filter-active-2"); else $(this).addClass("filter-active-1");
+    }));
+    $("body").on("click", ".applications__button", (function() {
+        $(this).addClass("applications__button--active");
+        $(this).siblings().removeClass("applications__button--active");
+    }));
+    $("body").on("click", ".popup-filters__item", (function() {
+        if ($(this).hasClass("popup-filter-active-1")) if ($(this).hasClass("popup-filter-active-2")) {
+            $(this).removeClass("popup-filter-active-2");
+            $(this).removeClass("popup-filter-active-1");
+        } else $(this).addClass("popup-filter-active-2"); else $(this).addClass("popup-filter-active-1");
+    }));
+    $("body").on("click", ".applications__button", (function() {
+        $(this).addClass("applications__button--active");
+        $(this).siblings().removeClass("applications__button--active");
+    }));
     window["FLS"] = true;
-    isWebp();
     menuInit();
     spollers();
     formFieldsInit();
